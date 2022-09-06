@@ -11802,10 +11802,6 @@ a:hover {
   color: #62db54;
 }
 
-* {
-  outline: solid 1px red;
-}
-
 .py-80 {
   padding-top: 80px;
   padding-bottom: 80px;
