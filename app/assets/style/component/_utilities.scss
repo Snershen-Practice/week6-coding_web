@@ -210,6 +210,23 @@
   overflow: hidden;
 }
 
+.start-10 {
+  left: 10px;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.rounded-topLeft {
+  border-top-left-radius: 24px !important;
+}
+
+.rounded-end {
+  border-top-right-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
+}
+
 //bootstrap
 
 .btn-outline-white:hover {
@@ -251,6 +268,12 @@
   background: linear-gradient($primary, $secondary) !important;
 }
 
+@media screem and (min-width: 576px) {
+  .w-md-80 {
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .me-lg-48 {
     margin-right: 48px !important;
@@ -260,5 +283,12 @@
   }
   .pe-lg-48 {
     padding-right: 48px !important;
+  }
+  .px-md-48 {
+    padding-right: 48px !important;
+    padding-left: 48px !important;
+  }
+  .ms-lg--40 {
+    margin-left: -40px;
   }
 }
