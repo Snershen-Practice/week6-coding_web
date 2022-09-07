@@ -5,6 +5,10 @@
 .banner {
   background: center/cover url(../images/bg_home.jpg);
   height: 680px;
+  @media (max-width: 576px) {
+    background: center/cover url(../images/bg_home_mobile.jpg);
+    height: 336px;
+  }
 }
 
 .feature {

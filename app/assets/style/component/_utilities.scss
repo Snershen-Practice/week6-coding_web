@@ -71,6 +71,14 @@
   color: transparent;
 }
 
+.active-text-gradient {
+  &:hover span {
+    background: linear-gradient($primary, $secondary);
+    background-clip: text;
+    color: transparent;
+  }
+}
+
 .active-border {
   border: solid 1px transparent;
   &:hover {
@@ -140,20 +148,6 @@
     display: none;
   }
 }
-
-// .active-border-angle {
-//   &:hover {
-//     background: linear-gradient(to left, $primary, $primary) left top no-repeat,
-//       linear-gradient(to bottom, $primary, $primary) left top no-repeat,
-//       linear-gradient(to left, $primary, $primary) right top no-repeat,
-//       linear-gradient(to bottom, $primary, $primary) right top no-repeat,
-//       linear-gradient(to left, $primary, $primary) left bottom no-repeat,
-//       linear-gradient(to bottom, $primary, $primary) left bottom no-repeat,
-//       linear-gradient(to left, $primary, $primary) right bottom no-repeat,
-//       linear-gradient(to left, $primary, $primary) right bottom no-repeat;
-//     background-size: 1px 20px, 20px 1px, 1px 20px, 20px 1px;
-//   }
-// }
 
 .active-border-angle {
   position: relative;
