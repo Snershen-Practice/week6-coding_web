@@ -11,13 +11,60 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body class="bg-black-dark">
-    <header class="bg-gray-700 border-bottom-double">
+    <header class="bg-gray-700 border-bottom-double w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light py-4">
+          <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="index.html"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="material-icons text-primary"> drag_handle </span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active text-center py-6 pe-4"
+                  aria-current="page"
+                  href="#"
+                  >首頁</a
+                >
+                <a href="course.html" class="nav-link text-center py-6 pe-4"
+                  >課程介紹</a
+                >
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center py-6"
+                  href="#"
+                  ><span class="material-icons me-1"> account_circle </span
+                  >登入</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <header class="bg-gray-700 border-bottom-double">
       <div class="container d-flex justify-content-between flex-lg-row">
         <a href="index.html" class="d-flex align-items-center"
           ><h1 class="d-flex align-items-center">
@@ -33,7 +80,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     
 <main class="bg-gray-900 pt-82 pb-80">
@@ -41,18 +88,20 @@
     <div class="row">
       <div class="offset-lg-1 col-lg-7">
         <!-- 課程總覽 -->
-        <section class="d-flex p-48 bg-gray-700 text-white rounded-3 mb-48">
-          <div class="me-48">
+        <section
+          class="d-flex p-48 bg-gray-700 text-white rounded-3 mb-48 flex-column flex-lg-row"
+        >
+          <div class="me-lg-48 me-0">
             <img
               src="./assets/images/teacher01.jpg"
               alt="Belinda"
               width="100"
               height="100"
-              class="rounded-circle d-block mb-2"
+              class="rounded-circle d-block mb-2 mx-auto"
             />
             <p class="mb-4 text-center">Belinda</p>
           </div>
-          <div class="me-88">
+          <div class="me-lg-88 me-0">
             <h2 class="fs-4 mb-4">基礎前端 - HTML</h2>
             <span class="text-primary mb-2 d-block">前端語言</span>
             <p>
@@ -64,15 +113,17 @@
         <section class="text-white mb-48">
           <h3 class="fs-5 mb-3">老師介紹</h3>
           <div class="bg-gray-700 p-5 rounded-3">
-            <div class="border-bottom d-flex flex-wrap pb-5">
-              <div class="w-50 mb-3">
+            <div
+              class="border-bottom d-flex flex-wrap pb-5 flex-column flex-lg-row"
+            >
+              <div class="w-100 w-lg-50 mb-3">
                 <p class="d-flex align-items-ceter">
                   <span class="material-icons text-primary me-2"> school </span>
                   <span class="text-gray-500 me-2">學歷</span>
                   國立中央大學 資訊工程 碩士 畢業
                 </p>
               </div>
-              <div class="w-50 mb-3">
+              <div class="w-100 w-lg-50 mb-3">
                 <p class="d-flex align-items-ceter">
                   <span class="material-icons text-primary me-2">
                     translate
@@ -81,7 +132,7 @@
                   中文/英文
                 </p>
               </div>
-              <div class="w-50">
+              <div class="w-100 w-lg-50 mb-3">
                 <p class="d-flex align-items-ceter">
                   <span class="material-icons text-primary me-2">
                     business_center
@@ -90,7 +141,7 @@
                   2020.08 - 迄今 上市企業 韌體工程師
                 </p>
               </div>
-              <div class="w-50">
+              <div class="w-100 w-lg-50">
                 <p class="d-flex align-items-ceter">
                   <span class="material-icons text-primary me-2">
                     military_tech
@@ -109,7 +160,7 @@
             </div>
           </div>
         </section>
-        <section class="text-white">
+        <section class="text-white mb-5 mb-lg-0">
           <h3 class="fs-5 mb-3">課程簡介</h3>
           <div class="bg-gray-700 p-5 rounded-3">
             <div class="mb-5">
@@ -239,8 +290,8 @@
   <div class="container">
     <div class="row text-white">
       <h2 class="deco-line-center text-center mb-48">其他人也看了這些課程</h2>
-      <div class="col">
-        <div class="bg-gray-700 rounded-3 active-border">
+      <div class="col-lg-3">
+        <div class="bg-gray-700 rounded-3 active-border mb-4">
           <div class="p-4 border-bottom pb-5">
             <img
               src="./assets/images/teacher01.jpg"
@@ -263,8 +314,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="bg-gray-700 rounded-3 active-border">
+      <div class="col-lg-3">
+        <div class="bg-gray-700 rounded-3 active-border mb-4">
           <div class="p-4 border-bottom pb-5">
             <img
               src="./assets/images/teacher02.jpg"
@@ -286,8 +337,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="bg-gray-700 rounded-3 active-border">
+      <div class="col-lg-3">
+        <div class="bg-gray-700 rounded-3 active-border mb-4">
           <div class="p-4 border-bottom pb-5">
             <img
               src="./assets/images/teacher03.jpg"
@@ -314,8 +365,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="bg-gray-700 rounded-3 mb-56 active-border">
+      <div class="col-lg-3">
+        <div class="bg-gray-700 rounded-3 mb-56 active-border mb-4">
           <div class="p-4 border-bottom pb-5">
             <img
               src="./assets/images/teacher04.jpg"
@@ -345,8 +396,12 @@
     <footer class="footer text-center bg-gray-900">
       <p class="text-white py-5">Coding Home © 2022 All Rights Reserved</p>
     </footer>
-
-    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>

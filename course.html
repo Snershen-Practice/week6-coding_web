@@ -11,13 +11,60 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body class="bg-black-dark">
-    <header class="bg-gray-700 border-bottom-double">
+    <header class="bg-gray-700 border-bottom-double w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-light py-4">
+          <div class="container-fluid d-flex">
+            <a class="navbar-brand" href="index.html"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="material-icons text-primary"> drag_handle </span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active text-center py-6 pe-4"
+                  aria-current="page"
+                  href="#"
+                  >首頁</a
+                >
+                <a href="course.html" class="nav-link text-center py-6 pe-4"
+                  >課程介紹</a
+                >
+                <a
+                  class="nav-link d-flex align-items-center justify-content-center py-6"
+                  href="#"
+                  ><span class="material-icons me-1"> account_circle </span
+                  >登入</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <header class="bg-gray-700 border-bottom-double">
       <div class="container d-flex justify-content-between flex-lg-row">
         <a href="index.html" class="d-flex align-items-center"
           ><h1 class="d-flex align-items-center">
@@ -33,7 +80,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     
 <main class="bg-gray-800">
@@ -50,18 +97,19 @@
     </div>
     <div class="row justify-content-center">
       <ul class="col-lg-10">
-        <li class="d-flex text-white bg-gray-700 rounded-3 p-48 mb-5 flex-column flex-lg-row align-items-center align-items-lg-start">
+
+        <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start  p-48 mb-5 text-white bg-gray-700 rounded-3">
           <div class="pe-lg-48 pe-0">
             <img
               src="./assets/images/teacher01.jpg"
               alt="Belinda"
               width="100"
               height="100"
-              class="rounded-circle d-block mb-2"
+              class="d-block mb-2 rounded-circle"
             />
             <p class="mb-4 text-center">Belinda</p>
           </div>
-          <div class="me-lg-88 me-0 mb-48 mb-lg-0">
+          <div class="me-0 me-lg-88 mb-48 mb-lg-0">
             <h3 class="fs-4 mb-4">基礎前端 - HTML</h3>
             <span class="text-primary mb-2 d-block">前端語言</span>
             <p>
@@ -70,20 +118,21 @@
             </p>
           </div>
           <div class="text-center flex-shrink-0">
-            <div class="d-flex align-items-center justify-content-center mb-3 flex-lg-column ">
-              <span class="fs-7 text-center d-block mb-1 me-2 me-lg-0">50分鐘</span>
-              <h3 class="text-center fs-2 mb-lg-3 mb-0 ">NT$1600</h3>
+            <div class="d-flex justify-content-center align-items-center flex-lg-column mb-3">
+              <span class="d-block text-center mb-1 me-2 me-lg-0 fs-7">50分鐘</span>
+              <h3 class="text-center mb-lg-3 mb-0 fs-2">NT$1600</h3>
             </div>
             <div class="d-flex flex-lg-column">
-              <a href="detail.html" class="btn btn-outline-white px-48 py-2 mb-lg-2 mb-0 me-2 me-lg-0"
+              <a href="detail.html" class="btn btn-outline-white px-3 px-md-48 py-2 mb-lg-2 mb-0 me-2 me-lg-0 "
                 >課程介紹</a
               >
-              <a href="#" class="btn btn-linear px-48 py-2">立即預約</a>
+              <a href="#" class="btn btn-linear px-md-48 px-3 py-2 border-0 ">立即預約</a>
             </div>
           </div>
         </li>
-        <li class="d-flex text-white bg-gray-700 rounded-3 p-48 mb-5">
-          <div class="pe-48">
+
+        <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start  p-48 mb-5 text-white bg-gray-700 rounded-3">
+          <div class="pe-lg-48 pe-0">
             <img
               src="./assets/images/teacher02.jpg"
               alt="Belinda"
@@ -93,7 +142,7 @@
             />
             <p class="mb-4 text-center">Guava</p>
           </div>
-          <div class="me-88">
+          <div class="me-0 me-lg-88 mb-48 mb-lg-0">
             <h3 class="fs-4 mb-4">2022 Python 全攻略｜從入門到實務</h3>
             <span class="text-primary mb-2 d-block">後端語言</span>
             <p>
@@ -101,16 +150,20 @@
             </p>
           </div>
           <div class="text-center flex-shrink-0">
-            <span class="fs-7 text-center d-block mb-1">50分鐘</span>
-            <h3 class="text-center fs-2 mb-3">NT$2000</h3>
-            <a href="#" class="btn btn-outline-white px-48 py-2 mb-2"
+            <div class="d-flex justify-content-center align-items-center flex-lg-column mb-3">
+              <span class="d-block text-center mb-1 me-2 me-lg-0 fs-7">50分鐘</span>
+              <h3 class="text-center fs-2 mb-3">NT$2000</h3>
+            </div>
+            <div class="d-flex flex-lg-column">
+            <a href="#" class="btn btn-outline-white px-3 px-md-48 py-2 mb-lg-2 mb-0 me-2 me-lg-0"
               >課程介紹</a
-            ><br />
-            <a href="#" class="btn btn-linear px-48 py-2">立即預約</a>
+            >
+            <a href="#" class="btn btn-linear px-md-48 px-3 py-2 border-0">立即預約</a>
+            </div>
           </div>
         </li>
-        <li class="d-flex text-white bg-gray-700 rounded-3 p-48 mb-5">
-          <div class="pe-48">
+        <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start  p-48 mb-5 text-white bg-gray-700 rounded-3">
+          <div class="pe-lg-48 pe-0">
             <img
               src="./assets/images/teacher03.jpg"
               alt="Belinda"
@@ -120,7 +173,7 @@
             />
             <p class="mb-4 text-center">Joe</p>
           </div>
-          <div class="me-88">
+          <div class="me-0 me-lg-88 mb-48 mb-lg-0">
             <h3 class="fs-4 mb-4">
               活用 Line Bot ｜APP 開發到上架完整實戰攻略
             </h3>
@@ -132,16 +185,20 @@
             </p>
           </div>
           <div class="text-center flex-shrink-0">
-            <span class="fs-7 text-center d-block mb-1">50分鐘</span>
-            <h3 class="text-center fs-2 mb-3">NT$1800</h3>
-            <a href="#" class="btn btn-outline-white px-48 py-2 mb-2"
+            <div class="d-flex justify-content-center align-items-center flex-lg-column mb-3">
+              <span class="d-block text-center mb-1 me-2 me-lg-0 fs-7">50分鐘</span>
+              <h3 class="text-center fs-2 mb-3">NT$1800</h3>
+            </div>
+            <div class="d-flex flex-lg-column">
+            <a href="#" class="btn btn-outline-white px-3 px-md-48 py-2 mb-lg-2 mb-0 me-2 me-lg-0"
               >課程介紹</a
-            ><br />
-            <a href="#" class="btn btn-linear px-48 py-2">立即預約</a>
+            >
+            <a href="#" class="btn btn-linear px-md-48 px-3 py-2 border-0">立即預約</a>
+            </div>
           </div>
         </li>
-        <li class="d-flex text-white bg-gray-700 rounded-3 p-48 mb-5">
-          <div class="pe-48">
+        <li class="d-flex flex-column flex-lg-row align-items-center align-items-lg-start  p-48 mb-5 text-white bg-gray-700 rounded-3">
+          <div class="pe-lg-48 pe-0">
             <img
               src="./assets/images/teacher04.jpg"
               alt="Belinda"
@@ -151,7 +208,7 @@
             />
             <p class="mb-4 text-center">Lina</p>
           </div>
-          <div class="me-88">
+          <div class="me-0 me-lg-88 mb-48 mb-lg-0">
             <h3 class="fs-4 mb-4">Linux 零基礎七天入門｜入門到實務</h3>
             <span class="text-primary mb-2 d-block">作業系統與伺服器</span>
             <p>
@@ -159,12 +216,16 @@
             </p>
           </div>
           <div class="text-center flex-shrink-0">
-            <span class="fs-7 text-center d-block mb-1">50分鐘</span>
-            <h3 class="text-center fs-2 mb-3">NT$1100</h3>
-            <a href="#" class="btn btn-outline-white px-48 py-2 mb-2"
+            <div class="d-flex justify-content-center align-items-center flex-lg-column mb-3">
+              <span class="d-block text-center mb-1 me-2 me-lg-0 fs-7">50分鐘</span>
+              <h3 class="text-center fs-2 mb-3">NT$1100</h3>
+            </div>
+            <div class="d-flex flex-lg-column">
+            <a href="#" class="btn btn-outline-white px-3 px-md-48 py-2 mb-lg-2 mb-0 me-2 me-lg-0"
               >課程介紹</a
-            ><br />
-            <a href="#" class="btn btn-linear px-48 py-2">立即預約</a>
+            >
+            <a href="#" class="btn btn-linear px-md-48 px-3 py-2 border-0">立即預約</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -176,8 +237,12 @@
     <footer class="footer text-center bg-gray-900">
       <p class="text-white py-5">Coding Home © 2022 All Rights Reserved</p>
     </footer>
-
-    <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
