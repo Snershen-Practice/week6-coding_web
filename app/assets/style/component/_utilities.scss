@@ -151,44 +151,42 @@
 
 .active-border-angle {
   position: relative;
-  &:hover .active-border-box {
+  &:hover .angleBorder {
     opacity: 1;
   }
-}
-.active-border-box {
-  opacity: 0;
-  position: absolute;
-  @include size(32px);
-}
-.active-topLeft-item {
-  top: 0;
-  left: 0;
-  border-top: 2px $primary solid;
-  border-left: 2px $primary solid;
-  border-top-left-radius: 10px;
-}
-.active-topRight-item {
-  top: 0;
-  right: 0;
-  border-top: 2px $primary solid;
-  border-right: 2px $primary solid;
-  border-top-right-radius: 10px;
-}
-
-.active-bottomLeft-item {
-  bottom: 0;
-  left: 0;
-  border-bottom: 2px $primary solid;
-  border-left: 2px $primary solid;
-  border-bottom-left-radius: 10px;
-}
-
-.active-bottomRight-item {
-  bottom: 0;
-  right: 0;
-  border-bottom: 2px $primary solid;
-  border-right: 2px $primary solid;
-  border-bottom-right-radius: 10px;
+  .angleBorder {
+    opacity: 0;
+    position: absolute;
+    @include size(32px);
+    &-topLeft {
+      top: 0;
+      left: 0;
+      border-top: 2px $primary solid;
+      border-left: 2px $primary solid;
+      border-top-left-radius: 10px;
+    }
+    &-topRight {
+      top: 0;
+      right: 0;
+      border-top: 2px $primary solid;
+      border-right: 2px $primary solid;
+      border-top-right-radius: 10px;
+    }
+    &-bottomLeft {
+      bottom: 0;
+      left: 0;
+      border-bottom: 2px $primary solid;
+      border-left: 2px $primary solid;
+      border-bottom-left-radius: 10px;
+    }
+    &-bottomRight {
+      bottom: 0;
+      right: 0;
+      border-bottom: 2px $primary solid;
+      border-right: 2px $primary solid;
+      border-bottom-right-radius: 10px;
+    }
+  }
 }
 
 .fs-80 {
