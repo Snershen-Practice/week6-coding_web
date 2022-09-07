@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-  cssMode: true,
+  // cssMode: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -9,4 +9,8 @@ var swiper = new Swiper(".mySwiper", {
   },
   mousewheel: true,
   keyboard: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
 });
