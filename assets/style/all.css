@@ -12530,7 +12530,7 @@ body {
   background: linear-gradient(#62db54, #09acf5) !important;
 }
 
-@media screem and (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .w-md-80 {
     width: 80%;
   }
@@ -12571,7 +12571,7 @@ body {
   height: 615px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .feature-item {
     height: 300px;
   }
@@ -12635,6 +12635,30 @@ body {
   width: 10px;
   height: 10px;
   background: #fff;
+}
+
+.comment-card {
+  margin-bottom: -44px;
+  left: -40px;
+}
+
+@media screen and (max-width: 992px) {
+  .comment-card {
+    left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.comment-pic {
+  right: -20px;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .comment-pic {
+    right: 0;
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

@@ -7,9 +7,9 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev"
   },
   pagination: {
-    el: ".swiper-pagination"
+    el: ".swiper-pagination",
+    clickable: true
   },
-  mousewheel: true,
   keyboard: true,
   effect: "fade",
   fadeEffect: {
