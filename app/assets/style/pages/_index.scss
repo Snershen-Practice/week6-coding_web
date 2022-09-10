@@ -62,3 +62,20 @@
   @include size(10px);
   background: #fff;
 }
+
+.comment-card {
+  margin-bottom: -44px;
+  left: -40px;
+  @include pad {
+    left: 0;
+    margin-bottom: 0;
+  }
+}
+.comment-pic {
+  right: -20px;
+  bottom: 20px;
+  @include pad {
+    right: 0;
+    left: 0;
+  }
+}

@@ -260,7 +260,7 @@
   background: linear-gradient($primary, $secondary) !important;
 }
 
-@media screem and (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .w-md-80 {
     width: 80%;
   }
@@ -284,3 +284,7 @@
     margin-left: -40px;
   }
 }
+
+// * {
+//   outline: solid 1px;
+// }
